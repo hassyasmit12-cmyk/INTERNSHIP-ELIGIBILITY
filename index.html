@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internship Checker</title>
+</head>
+<body>
+    <h2>Internship Eligibility Checker</h2>
+
+    <form action="/result" method="POST">
+        CGPA: <input type="number" step="0.01" name="cgpa"><br><br>
+        Year: <input type="number" name="year"><br><br>
+        Backlogs: <input type="number" name="backlogs"><br><br>
+        Attendance: <input type="number" name="attendance"><br><br>
+
+        Domain:
+        <select name="domain">
+            <option value="tech">Tech</option>
+            <option value="finance">Finance</option>
+        </select><br><br>
+
+        Resume: <input type="checkbox" name="resume" value="y"><br>
+        Project: <input type="checkbox" name="project" value="y"><br>
+        GitHub: <input type="checkbox" name="github" value="y"><br>
+        Communication: <input type="checkbox" name="communication" value="y"><br>
+        Teamwork: <input type="checkbox" name="teamwork" value="y"><br>
+        Internship: <input type="checkbox" name="prior_intern" value="y"><br>
+        Certification: <input type="checkbox" name="certification" value="y"><br><br>
+
+        <button type="submit">Check Eligibility</button>
+    </form>
+</body>
+</html>
